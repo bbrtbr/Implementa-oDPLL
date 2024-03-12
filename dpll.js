@@ -55,7 +55,7 @@ function eSatisfativel(formula) {
 
 const fs = require("fs"); //importando o módulo File System para trabalhar com operações do sistema de arquivos do Node
 
-const linhas = fs.readFileSync("text.txt", "utf-8").split("0\n"); //Lê o arquivo de forma síncrona, e divide em um array de linhas usando 0\n
+const linhas = fs.readFileSync("text.cnf", "utf-8").split("0\n"); //Lê o arquivo de forma síncrona, e divide em um array de linhas usando 0\n
 /**A leitura de maneira síncrona lê todo o arquivo antes de continuar, talvez seja mais interessante usar o metodo assincrono para não
  * ter bloqueios de execução durante a execução do progama
  */
